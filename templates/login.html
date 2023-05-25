@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>EGM - User Login</title>
+
+  <!-- Bootstrap v4.4.1 -->
+  <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/bootstrap.min.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.jpg">
+</head>
+
+<body class="bg-light">      
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <div class="text-center mt-5">
+          <img class="mb-2" src="/static/images/logo.png" alt="" width="100" height="100">
+        </div>
+        <h1 class="text-center">User Login</h1>
+        <hr>
+        <form id="login_form", action='/login' method='POST'>
+          <span id="login_error_message"></span>
+          <div class="mb-3">
+            <label for="username">Username *</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username"
+              maxlength="50">
+            <div id="username_error_message" class="text-danger"></div>
+          </div>
+          <div class="mb-3">
+            <label for="password">Password *</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password"
+              maxlength="50">
+            <div id="password_error_message" class="text-danger"></div>
+          </div>
+          <hr class="mb-4">
+          <input type="hidden" name="action" id="action" value="login_user">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+          <div class="mt-2">
+            <p><a href="/register">Do not have an account yet? Register.</a></p>
+          </div>
+        </form>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul class="flashes">
+          {% for category, message in messages %}
+          <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2023 DTU. <a target="blank"
+            >All Rights Reserved.</p>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+
+ 
+</body>
+
+</html>

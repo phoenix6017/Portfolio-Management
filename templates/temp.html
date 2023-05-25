@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="/static/styles.css">
+
+        <title>Portfolio Website</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Templates for you {{username}}</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#templates" class="nav__link active-link">Categories</a></li>
+                        <li class="nav__item"><a href="#eng" class="nav__link">Engineering</a></li>
+                        <li class="nav__item"><a href="#sports" class="nav__link">Sports</a></li>
+                        <li class="nav__item"><a href="#banking" class="nav__link">Banking</a></li>
+                        <li class="nav__item"><a href="#Teacher" class="nav__link">Teaching</a></li>
+                        <li class="nav__item"><a href="#Journalism" class="nav__link">Journalism</a></li>
+			<li class="nav__item"><a href="/login" class="nav__link">Logout</a></li>
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="templates">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Search By Categories</h1>
+                        <h3 class="home__subtitle">The best you <br>can choose.</h3>
+                    </div>
+    
+                    <img src="/static/asset/img/homes.jpg" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="eng">
+                <span class="section-subtitle">Premium Designs</span>
+                <h2 class="section-title">For Engineers</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="/static/asset/img/a.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Civil</h3>
+                        <span class="menu__detail">Constructions</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="/static/asset/img/img2.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Software</h3>
+                        <span class="menu__detail">Software Developer</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="/static/asset/img/b.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Electrical</h3>
+                        <span class="menu__detail">Embedded Systems</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="sports">
+                <span class="section-subtitle">Premium Designs</span>
+                <h2 class="section-title">For Sportsperson</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="/static/asset/img/d.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Athlete</h3>
+                        <span class="menu__detail">400m specialist</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="/static/asset/img/e.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Fighter</h3>
+                        <span class="menu__detail">Boxer</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="/static/asset/img/c.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Cricketer</h3>
+                        <span class="menu__detail">All Rounder</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="banking">
+                <span class="section-subtitle">Premium Designs</span>
+                <h2 class="section-title">For Bankers</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="/static/asset/img/g.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Manager</h3>
+                        <span class="menu__detail">Banker</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="/static/asset/img/f.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Accountant</h3>
+                        <span class="menu__detail">Gold Medalist</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="/static/asset/img/h.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Trader</h3>
+                        <span class="menu__detail">Quant Specialist</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="Teacher">
+                <span class="section-subtitle">Premium Designs</span>
+                <h2 class="section-title">For Teachers</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="/static/asset/img/i.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Professor</h3>
+                        <span class="menu__detail">IITIAN</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="/static/asset/img/j.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">TGT</h3>
+                        <span class="menu__detail">B.Ed.</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="/static/asset/img/k.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Kindergarden</h3>
+                        <span class="menu__detail">Friendly Nature</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="Journalism">
+                <span class="section-subtitle">Premium Designs</span>
+                <h2 class="section-title">For Journalists</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="/static/asset/img/l.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Reporter</h3>
+                        <span class="menu__detail">Interview Experiences</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="/static/asset/img/m.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Videographer</h3>
+                        <span class="menu__detail">Good at Shooting</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="/static/asset/img/n.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Writer</h3>
+                        <span class="menu__detail">Experial</span>
+                        <a href="/static/R.pdf" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+
+            
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Portfolio Management</a>
+                    <span class="footer__description">Social Media</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Template</a></li>
+                        <li><a href="#" class="footer__link">Subscription</a></li>
+                        <li><a href="#" class="footer__link">Comment</a></li>
+                        <li><a href="#" class="footer__link">Become an Editor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Subscription Policy</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Made By</h3>
+                    <ul>
+                        <li>Kushagra - Krishan</li>
+                        <li>2K21/SE/107 - 2K21/SE/101</li>
+                        <li>9811505627</li>
+                        <li>kush.arora.1909@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 DTU. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="/static/asset/js/main.js"></script>
+    </body>
+</html>
